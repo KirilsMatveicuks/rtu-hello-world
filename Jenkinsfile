@@ -6,9 +6,9 @@ pipeline {
                 echo "Hello World!"
             }
         }
-        stage('List all fiels') {
+        stage('Check node version') {
             steps {
-                ls -a
+              bat "node --version"
             }
         }
     }
